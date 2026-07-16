@@ -1,6 +1,6 @@
 # Space Runner 🚀
 
-Welcome to **Space Runner** – a 2D arcade space shooter built with **Phaser 3**. Control your spaceship, dodge enemy attacks, destroy enemy ships, and compete for the highest score on the online leaderboard powered by Firebase.
+Welcome to **Space Runner** – a 2D arcade space shooter built with **Phaser**. Control your spaceship, dodge enemy attacks, destroy enemy ships, and compete for the highest score on the online leaderboard powered by Firebase.
 
 ![Space Runner Screenshot](./assets/screenshot.png)
 
@@ -26,7 +26,7 @@ https://space-runner-game.vercel.app/
 
 ## Technologies Used
 
-- **Phaser 3** – game engine
+- **Phaser** – game engine
 - **JavaScript (ES6 Modules)** – game logic
 - **Firebase Firestore** – online leaderboard
 - **Vite** – development server and bundler
