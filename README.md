@@ -2,7 +2,7 @@
 
 Welcome to **Space Runner** – a 2D arcade space shooter built with **Phaser**. Control your spaceship, dodge enemy attacks, destroy enemy ships, and compete for the highest score on the online leaderboard powered by Firebase.
 
-![Space Runner Screenshot](./assets/screenshot.png)
+![Space Runner Screenshot](./public/assets/screenshot.png)
 
 ## Features
 
