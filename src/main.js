@@ -7,33 +7,56 @@ import { GameOver } from "./scenes/GameOver.js";
 import { NameEntry } from "./scenes/NameEntry.js";
 import { Leaderboard } from "./scenes/Leaderboard.js";
 
-const config = {
-  type: Phaser.AUTO,
-  title: "SPACE RUNNER",
-  description: "",
-  parent: "game-container",
-  width: 1280,
-  height: 720,
-  backgroundColor: "#000000",
-  pixelArt: false,
+const isMobileDevice =
+  window.innerWidth < 768 ||
+  /Android|iPhone|iPad|iPod|Mobile/i.test(navigator.userAgent);
 
-  physics: {
-    default: "arcade",
-    arcade: {
-      gravity: {
-        x: 0,
-        y: 0,
+if (isMobileDevice) {
+  document.body.innerHTML = `
+        <div class="mobile-message">
+            <div class="mobile-message__card">
+                <h1>Desktop Required</h1>
+
+                <p>
+                    Space Runner is not currently supported on mobile devices.
+                </p>
+
+                <p>
+                    Please open the game on a desktop or laptop computer
+                    for the best experience.
+                </p>
+            </div>
+        </div>
+    `;
+} else {
+  const config = {
+    type: Phaser.AUTO,
+    title: "SPACE RUNNER",
+    description: "",
+    parent: "game-container",
+    width: 1280,
+    height: 720,
+    backgroundColor: "#000000",
+    pixelArt: false,
+
+    physics: {
+      default: "arcade",
+      arcade: {
+        gravity: {
+          x: 0,
+          y: 0,
+        },
+        debug: false,
       },
-      debug: false,
     },
-  },
 
-  scene: [Menu, NameEntry, Controls, Start, GameOver, Leaderboard],
+    scene: [Menu, NameEntry, Controls, Start, GameOver, Leaderboard],
 
-  scale: {
-    mode: Phaser.Scale.FIT,
-    autoCenter: Phaser.Scale.CENTER_BOTH,
-  },
-};
+    scale: {
+      mode: Phaser.Scale.FIT,
+      autoCenter: Phaser.Scale.CENTER_BOTH,
+    },
+  };
 
-new Phaser.Game(config);
+  new Phaser.Game(config);
+}

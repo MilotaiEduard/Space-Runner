@@ -52,6 +52,46 @@
             text-decoration: none;
             color: inherit;
         }
+
+        .mobile-message {
+            width: 100%;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 24px;
+            background:
+                linear-gradient(
+                    rgba(0, 0, 0, 0.65),
+                    rgba(0, 0, 0, 0.65)
+                ),
+                url('/assets/space.png') center / cover no-repeat;
+        }
+
+        .mobile-message__card {
+            width: 100%;
+            max-width: 520px;
+            padding: 40px 28px;
+            text-align: center;
+            background-color: rgba(7, 20, 38, 0.94);
+            border: 3px solid #52d4ff;
+            border-radius: 12px;
+            box-shadow: 0 0 30px rgba(82, 212, 255, 0.25);
+        }
+
+        .mobile-message__card h1 {
+            margin-bottom: 24px;
+            font-size: 40px;
+            color: #ffffff;
+            text-shadow: 0 0 8px #168dca;
+        }
+
+        .mobile-message__card p {
+            margin-top: 14px;
+            font-size: 19px;
+            line-height: 1.5;
+            color: #b9d4e5;
+        }
     </style>
 </head>
 
