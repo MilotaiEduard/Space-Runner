@@ -9,7 +9,7 @@ export class NameEntry extends Phaser.Scene {
   }
 
   preload() {
-    this.load.image("nameEntryBackground", "assets/space.png");
+    this.load.image("nameEntryBackground", "/assets/space.png");
   }
 
   create() {

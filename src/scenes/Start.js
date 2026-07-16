@@ -14,13 +14,13 @@ export class Start extends Phaser.Scene {
   }
 
   preload() {
-    this.load.image("background", "assets/space.png");
-    this.load.image("laser", "assets/laser.png");
-    this.load.image("enemy", "assets/enemy-spaceship.png");
-    this.load.image("explosion", "assets/explosion.png");
+    this.load.image("background", "/assets/space.png");
+    this.load.image("laser", "/assets/laser.png");
+    this.load.image("enemy", "/assets/enemy-spaceship.png");
+    this.load.image("explosion", "/assets/explosion.png");
     this.load.audio("explosionSound", "assets/explosion.mp3");
 
-    this.load.spritesheet("ship", "assets/spaceship.png", {
+    this.load.spritesheet("ship", "/assets/spaceship.png", {
       frameWidth: 176,
       frameHeight: 96,
     });

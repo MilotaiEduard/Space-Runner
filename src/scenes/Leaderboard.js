@@ -7,7 +7,7 @@ export class Leaderboard extends Phaser.Scene {
   }
 
   preload() {
-    this.load.image("leaderboardBackground", "assets/space.png");
+    this.load.image("leaderboardBackground", "/assets/space.png");
   }
 
   create() {
